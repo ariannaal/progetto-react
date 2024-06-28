@@ -1,6 +1,7 @@
 
 import { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import Col from 'react-bootstrap/Col';
 
 
 class Gallery extends Component {
@@ -49,13 +50,14 @@ class Gallery extends Component {
         if (index < movies.length) { // se l'indice è minore della lunghezza dell'array movies cosi da evitare di ceracre di accedere ad un film inesistente
             const movie = movies[index]; // ottengo l'oggetto film con l indice calcolato
           carouselItemMovies.push(
-              
-              <img key={movie.imdbID}
-                src={movie.Poster}
-                alt={movie.Title}
-                style={{ width: '200px', height: '300px' }}
-              />
-
+                     <Col key={movie.imdbID} sm={6} md={4} lg={3} xl={2}> 
+                                <img
+                                    src={movie.Poster}
+                                    alt={movie.Title}
+                                    className="img-fluid"
+                                    style={{ width: '200px', height: '300px' }}
+                                />
+                        </Col>
           );
         }
       }
@@ -68,7 +70,8 @@ class Gallery extends Component {
                     <div  className="d-flex justify-content-around flex-row">
                         {carouselItemMovies}
                     </div>
-                    </Carousel.Item>
+                </Carousel.Item>
+                
             );
         }
 
@@ -76,8 +79,9 @@ class Gallery extends Component {
       startIndex += carouselItemsCount;
     }
 
-    return (
-      <Carousel>
+         return (
+        
+      <Carousel interval={null}>
         {carouselItems}
       </Carousel>
     );
