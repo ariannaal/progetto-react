@@ -53,9 +53,6 @@ const MyFooter = () => (
 
     </div>
 
-
-
-
 )
 
 export default MyFooter;

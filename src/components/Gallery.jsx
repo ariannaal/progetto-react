@@ -62,7 +62,6 @@ class Gallery extends Component {
         }
       }
 
-        // Aggiungi il Carousel.Item con i film generati
         if (carouselItemMovies.length > 0) { // se gli items nel carousel item sono > 0 cosi da non darmi un carousel item vuoto
             carouselItems.push(
 
@@ -71,7 +70,6 @@ class Gallery extends Component {
                         {carouselItemMovies}
                     </div>
                 </Carousel.Item>
-                
             );
         }
 
