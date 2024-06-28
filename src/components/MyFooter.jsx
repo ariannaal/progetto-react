@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 const MyFooter = () => (
 
-    <div className="footer mt-5 p-4" data-bs-theme="dark">
+    <div className="footer p-4" data-bs-theme="dark">
         <Container>
       <div className="d-flex justify-content-center mb-4" >
         <Image src="/assets/square-facebook.svg" alt="facebook logo" className="me-3 social-logo" />
