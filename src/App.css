@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -32,7 +33,31 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.tv-shows {
+  background: #2b3035;
+  color: white;
+}
+
+.footer {
+  background: #2b3035;
+  color: #5A5A5A;
+}
+
+
+
+.logo {
+  cursor: pointer;
+  max-height: 3rem;
+}
+
+.social-logo {
+  cursor: pointer;
+  height: 2rem;
+  margin-right: 1.5rem;
 }
